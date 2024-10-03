@@ -1,0 +1,112 @@
+.home {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrer verticalement */
+    background-color: #000;
+    position: fixed; /* La navbar reste fixée en haut */
+    top: 0;
+    z-index: 1000; /* S'assurer que la navbar est au-dessus du contenu */
+    
+    .logo {
+      font-size: 28px; /* Augmenté pour mieux correspondre à un logo */
+      font-weight: bold;
+      color: #00aaff; /* Couleur du logo comme dans l'image */
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 0 20px; /* Augmenté pour plus d'espacement entre les liens */
+
+        a {
+          text-decoration: none;
+          color: #f2f2f2;
+          font-size: 18px;
+          
+          &:hover {
+            color: #00aaff; /* Couleur de survol en bleu comme dans l'image */
+          }
+        }
+      }
+    }
+  }
+
+  .hero-section {
+    text-align: center;
+    padding: 160px 20px 100px; /* Ajout de padding pour ajuster en dessous de la navbar */
+    margin-top: 60px; /* Espace en haut pour ne pas être caché par la navbar */
+    
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #00aaff; /* Couleur bleue pour correspondre à l'image */
+    }
+
+    p {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #00aaff;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease; /* Ajout d'une transition pour l'effet de survol */
+
+      &:hover {
+        background-color: #0088cc; /* Couleur au survol */
+      }
+    }
+  }
+
+  .features-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 30px;
+      text-align: center; /* Centré pour chaque élément */
+
+      .icon {
+        font-size: 40px;
+        color: #00aaff;
+      }
+
+      p {
+        margin-top: 10px;
+        font-size: 18px;
+        color: white;
+      }
+
+      &:hover {
+        p {
+          color: #00aaff; /* Changement de couleur sur le texte au survol */
+        }
+        .icon {
+          color: #0088cc; /* Changement de couleur de l'icône au survol */
+        }
+      }
+    }
+  }
+}
