@@ -2,15 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 
-
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Tu peux ajouter d'autres routes ici si nécessaire */}
+          {/* Vous pouvez ajouter d'autres routes ici si nécessaire */}
         </Routes>
       </div>
     </Router>
